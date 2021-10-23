@@ -9,7 +9,7 @@ fetch(`./data.json`)
   .then(res => {
     res.json()
   })
-  .then(d => {
+  .then(data => {
     let idx = Math.floor(Math.random() * data.students.length)
 
     document.getElementById(`name`).innerText = data.students[idx]
