@@ -7,7 +7,7 @@
 
 fetch(`./data.json`)
   .then(res => {
-    res.json()
+    return res.json()
   })
   .then(data => {
     let idx = Math.floor(Math.random() * data.students.length)
