@@ -5,7 +5,7 @@
 //   document.getElementById(`name`).innerText = data.students[idx]
 // })()
 
-fetch(`./data.json`)
+fetch(`json/data.json`)
 .then(res => res.json())
 .then(data => {
   let idx = Math.floor(Math.random() * data.students.length)
